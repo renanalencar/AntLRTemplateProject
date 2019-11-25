@@ -1,0 +1,39 @@
+{
+    // Use o IntelliSense para aprender sobre possíveis atributos.
+    // Passe o mouse para ver as descrições dos atributos existentes.
+    // Para obter mais informações, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    {
+        "type": "antlr-debug",
+        "request": "launch",
+        "name": "Debug Current Grammar",
+        /* arquivo com o código fonte */
+        "input": "input.txt",
+        /* arquivo contendo a gramática */
+        "grammar": "SimpleCalc.g4",
+        /* nome da regra inicial de produção */
+        "startRule": "expr",
+        /* habilitar a visualização da árvore sintática */
+        "visualParseTree": true,
+        /* habilitar a impressão da árvore sintática */
+        "printParseTree": true
+    },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            /* arquivo com o código fonte */
+            "args": "input.txt"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-App<SimpleCalcVsCode>",
+            "request": "launch",
+            "mainClass": "app.App",
+            "projectName": "SimpleCalcVsCode",
+            "args": "input.txt"
+        }
+    ]
+}

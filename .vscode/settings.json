@@ -1,0 +1,37 @@
+/* 
+** Este é um objeto de configurações chamado "antlr4.generation" com os seguintes membros:
+**
+** 1. "mode", string enum (padrão: "internal"), determina qual padrão de geração de código deve ser seguido:
+**    a. "none": não gera nenhum código, nem mesmo para uso interno
+**      (nota: esse valor desabilitará a depuração gramatical)
+**    b. "internal": permite a geração de código para uso interno
+**      (por exemplo, dados completos de detecção de erros e intérpretes)
+**    c. "external": gera código também para uso externo, dependendo das outras opções de geração
+**
+** 2. outputDir, string (padrão: "indefinido"), determina a pasta de saída onde colocar o código gerado
+**   (considerado apenas se o modo estiver definido como "external")
+**
+** 3. importDir, string (padrão: "indefinido"), local para importar gramáticas
+**   (relativas à gramática que está sendo salva ou um caminho absoluto), usadas também para geração interna de código
+**
+** 4. package, string (padrão: "indefinido"), pacote / espaço para nome do código gerado (usado apenas no modo "external")
+**
+** 5. language, string (padrão: "Java"), especifica o idioma de destino para o código gerado,
+**   substituindo o que é especificado na gramática (usada apenas no modo "external")
+**
+** 6. listeners, booleano (padrão: "true"), também criam listeners na geração de código (usados ​​apenas no modo "external")
+**
+** 7. visitors, booleano (padrão: "false"), também criam visitors na geração de código (usados ​​apenas no modo "external")
+*/
+
+{
+    "antlr4.generation": {
+        "mode": "external",
+        "language": "Java",
+        "importDir": "grammar/imports",
+        "outputDir": "grammar",
+        "package": "grammar",
+        "listeners": false,
+        "visitors": true
+    }
+}
