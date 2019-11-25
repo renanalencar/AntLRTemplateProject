@@ -1,7 +1,7 @@
 # SimpleCalc - Compilador para uma simples gramática aritmética
-Exemplo desenvolvido por @renanalencar
+Exemplo desenvolvido por @renanalencar.<br/>
 Tome este projeto como base para desenvolver o projeto final da disciplina de Compiladores.
-Para o desenvolvimento do projeto do compilador para Mini Pascal abasta criar o arquivo **MiniPascal.g4** e modificar alguns arquivos dentro deste projeto.
+Para o desenvolvimento do projeto do compilador para Mini Pascal basta criar o arquivo **MiniPascal.g4** e modificar alguns arquivos dentro deste projeto.
 
 ## Pre-requisitos:
 - [Java Developement Toolkit (JDK)](https://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html)
